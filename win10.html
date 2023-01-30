@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <link rel="shortcut icon" href="Assets/win10.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <title>Windows 10</title>
+    </head>
+    <body class="bgWin10">
+
+        <div class="startmenuWin10" id="myStartMenuWin10">
+            <img src="Assets/win10_start.png" alt="startmenu Windows 10">
+        </div>
+
+        <div class="taskbarWin10" id="myTaskbarWin10">
+            <img src="Assets/win10_tb.jpg" alt="taskbar Windows 10">
+        </div>
+
+        <script>
+            let Win10Tb = document.getElementById("myTaskbarWin10");
+            let Win10Start = document.getElementById("myStartMenuWin10");
+
+            Win10Tb.addEventListener("click", ()=>{
+                if(Win10Start.style.bottom == "25px"){
+                    Win10Start.style.bottom = "-15px";
+                    Win10Start.style.visibility = "hidden";
+                    Win10Start.style.opacity = "0";
+                }
+                else {
+                    Win10Start.style.bottom = "25px";
+                    Win10Start.style.visibility = "visible";
+                    Win10Start.style.opacity = "100%";
+                }
+            })
+        </script>
+    </body>
+</html>

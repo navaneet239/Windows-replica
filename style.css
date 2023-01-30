@@ -1,0 +1,189 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html 
+{
+    height: 100vh;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.bgWin11 {
+    background-image: url("Assets/win11_wall.png");
+    background-size: cover;
+    max-height: 100vh;
+    background-position:0%;
+}
+
+.startmenuWin11 {
+    justify-self: flex-end;
+    position: absolute;
+    bottom: -665px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.startmenuWin11 img {
+    border-radius: 8px;
+    border: 0.25px solid rgb(68, 68, 68);
+	box-shadow: 0px 0px 7.5px rgb(0, 0, 0);
+    width: 485px;
+	height: 525px;
+    -webkit-filter: contrast(115%);
+    filter: contrast(115%);
+}
+
+.taskbarWin11 {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+
+.taskbarWin11 img {
+    border-top: 0.5px solid rgba(225, 225, 225, 0.5);
+    width: 100vw;
+    -webkit-filter: contrast(105%);
+    filter: contrast(105%);
+    margin-bottom: -5px;
+}
+
+.bgWin10 {
+    background-image: url("Assets/win10_wall.jpg");
+    background-size: cover;
+    max-height: 100vh;
+    background-position:0%;
+}
+
+.startmenuWin10 {
+    justify-self: flex-end;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.1s ease-out;
+}
+
+.startmenuWin10 img {
+    border: 0.25px solid rgba(225, 225, 225, 0.35);
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.384);
+    width: 615px;
+	height: 525px;
+}
+
+.taskbarWin10 {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+
+.taskbarWin10 img {
+    border-top: 0.5px solid rgba(225, 225, 225, 0.5);
+    width: 100vw;
+    height: 33px;
+    margin-bottom: -5px;
+}
+
+.bgWin7 {
+    background-image: url("Assets/win7_wall.jpg");
+    background-size: cover;
+    max-height: 100vh;
+    background-position:0%;
+}
+
+.startmenuWin7 {
+    justify-self: flex-end;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    bottom: 60px;
+    visibility: hidden;
+    transition: all 0.06s ease-out;
+}
+
+.startmenuWin7 img {
+    width: 450px;
+	height: 540px;
+}
+
+.taskbarWin7 {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+
+.taskbarWin7 img {
+    border-top: 0.5px solid rgba(225, 225, 225, 0.5);
+    width: 100vw;
+    margin-bottom: -5px;
+}
+
+.bgWinXp {
+    background-image: url("Assets/winXp_wall.jpg");
+    background-size: cover;
+    background-position:0%;
+}
+
+.startmenuWinXp {
+    justify-self: flex-end;
+    position: absolute;
+    left: 0;
+    bottom: 37px;
+    visibility: hidden;
+}
+
+.startmenuWinXp img {
+    width: 450px;
+	height: 540px;
+    border-radius:  10px 10px 0 0;
+}
+
+.taskbarWinXp {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+
+.taskbarWinXp img {
+    border-top: 0.5px solid rgba(225, 225, 225, 0.5);
+    width: 100vw;
+    margin-bottom: -5px;
+}
+
+.bgWin95 {
+    background-color: rgb(65, 112, 165);
+    background-size: cover;
+    background-position:0%;
+}
+
+.startmenuWin95 {
+    justify-self: flex-end;
+    position: absolute;
+    left: 0;
+    bottom: 42px;
+    visibility: hidden;
+}
+
+.startmenuWin95 img {
+    width: 300px;
+	height: 440px;
+}
+
+.taskbarWin95 {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+
+.taskbarWin95 img {
+    border-top: 0.5px solid rgba(225, 225, 225, 0.5);
+    width: 100vw;
+    margin-bottom: -5px;
+}

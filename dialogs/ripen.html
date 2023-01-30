@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+
+        .window {
+            overflow: hidden;
+            border: 2px solid rgba(209, 209, 209, 0.541);
+            background-color: rgba(214, 214, 214, 0.65);
+            backdrop-filter: blur(25px);
+            border-radius: 8px;
+        }
+
+        .title-bar {
+            padding: 5px;
+        }
+
+        .title-bar-text {
+            float: left;
+            font-size: 14px;
+            padding-left: 5px;
+        }
+
+        .title-bar-controls {
+            float: right;
+            margin-top: -5px;
+        }
+
+        .TbBtn {
+            width: 100px;height: 5px;
+            background-color: red;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .field-row {
+            float: right;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 8px;
+            border-radius: 4px;
+            width: 90px;
+            border-right:  none;
+            border-left: none;
+            border-top:  0.25px solid #f1f1f11e;
+            border-bottom:  none;
+            border-radius: 8px;
+            background-color: rgba(241, 241, 241, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="window" style="width: 100%; height: 100%;">
+        <div class="title-bar">
+            <div class="title-bar-text">
+              Windows Ripen
+            </div>
+    
+            <div class="title-bar-controls">
+              <div class="TbBtn"></div>
+            </div><br>
+          </div>
+        <div class="window-body" style="padding: 5px;" id="Win10"><CENTER>
+          <p style="font-size: 16px;">
+            ok my Windows concept, Windows Ripen
+        </p>
+        <div style="padding: 25px;"><img src="../Assets/ripen.png" width="135px" alt="11" ></div>
+          <div>
+            <section class="field-row" style="justify-content: flex-end; margin-bottom: 10px;">
+                <button>ok</button>
+                <button>cancel</button>
+            </section>
+          </div>
+        </CENTER></div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <link rel="shortcut icon" href="Assets/win11.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <title>Windows 11</title>
+    </head>
+    <body class="bgWin11">
+
+        <div class="startmenuWin11" id="myStartMenuWin11">
+            <img src="Assets/win11_start.png" alt="startmenu Windows 11">
+        </div>
+
+        <div class="taskbarWin11" id="myTaskbarWin11">
+            <img src="Assets/win11_tb.jpg" alt="taskbar Windows 11">
+        </div>
+
+        <script>
+            let Win11Tb = document.getElementById("myTaskbarWin11");
+            let Win11Start = document.getElementById("myStartMenuWin11");
+
+            Win11Tb.addEventListener("click", ()=>{
+                if(Win11Start.style.bottom == "50px"){
+                    Win11Start.style.bottom = "-665px";
+                    Win11Start.style.visibility = "hidden";
+                    Win11Start.style.opacity = "0";
+                }
+                else {
+                    Win11Start.style.bottom = "50px";
+                    Win11Start.style.visibility = "visible";
+                    Win11Start.style.opacity = "100%";
+                }
+            })
+        </script>
+    </body>
+</html>

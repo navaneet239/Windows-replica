@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+        <link rel="stylesheet" href="style.css">
+        <title>Windows</title>
+
+        <style>
+            body {
+                background-image: url("https://uploads-ssl.webflow.com/6384db3d7b4dd356473d0489/6388a95c066e0ed4a8e4a148_wallpaperbetter.com_1920x1080%20(5)-p-1600.jpg");
+                background-size: cover;
+                background-position: 0%;
+                transition: all 0.9s ;
+            }
+
+            .dialogs {
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                transition: all 0.75s;
+                animation: popup 0.75s ;
+            }
+
+            @keyframes popup {
+                0%{transform: translate(-50%, -50%) scale(0.01);
+                opacity: 0;}
+                50%{transform: translate(-50%, -50%) scale(1.05);
+                opacity: 1;}
+                100%{transform: translate(-50%, -50%) scale(0.98);
+                opacity: 1;}
+            }
+
+        </style>
+    </head>
+    <body onload="dl()" >
+        <CENTER>
+            <div class="dialogs" id="mydialogs" >
+                <iframe src="dialogs/95Db.html" frameborder="0" width="400px" height="300px" 
+                onmouseover="win95Bg()" style="display: inline-block;" onmouseleave="winBg()"></iframe>
+
+                <iframe src="dialogs/XpDb.html" frameborder="0" width="400px" height="300px" style="border-radius: 8px 8px 0 0; display: inline-block;" onmouseover="winXpBg()"  onmouseleave="winBg()"></iframe>
+
+                <iframe src="dialogs/7Db.html" frameborder="0" width="400px" height="300px" style="border-radius: 8px 8px 0 0; display: inline-block;" onmouseover="win7Bg()"  onmouseleave="winBg()"></iframe>
+
+                <iframe src="dialogs/10Db.html" frameborder="0" width="400px" height="300px"
+                onmouseover="win10Bg()" style="display: inline-block;"  onmouseleave="winBg()"></iframe>
+
+                <iframe src="dialogs/11Db.html" frameborder="0" width="400px" height="300px" style="border-radius: 8px; display: inline-block;"  onmouseover="win11Bg()"  onmouseleave="winBg()"></iframe>
+
+                <iframe src="dialogs/ripen.html" frameborder="0" width="400px" height="300px" style="border-radius: 8px; display: inline-block;" onmouseover="ripenBg()"  onmouseleave="winBg()"></iframe>
+            </div>
+        </CENTER>
+        <script>
+
+            function dl() {
+                setTimeout(() => {
+                    document.getElementsByClassName("dialogs")[0].style.display = "block";
+                }, 250);
+            }
+
+            function win95Bg(){
+            document.body.style.backgroundImage = "url('Assets/win95_wall.jpg')";
+            }
+
+            function winXpBg(){
+            document.body.style.backgroundImage = "url('Assets/winXp_wall.jpg')";
+            }
+
+            function win7Bg(){
+            document.body.style.backgroundImage = "url('Assets/win7_wall.jpg')";
+            }
+
+            function win10Bg(){
+            document.body.style.backgroundImage = "url('Assets/win10_wall.jpg')";
+            }
+
+            
+            function win11Bg(){
+            document.body.style.backgroundImage = "url('Assets/win11_wall.png')";
+            }
+
+            function ripenBg(){
+            document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/ripenos/ripenos.github.io/main/Assets/General/RipenWaves2.png')";
+            }
+
+            function winBg(){
+            document.body.style.backgroundImage = "url('https://uploads-ssl.webflow.com/6384db3d7b4dd356473d0489/6388a95c066e0ed4a8e4a148_wallpaperbetter.com_1920x1080%20(5)-p-1600.jpg')";
+            }
+
+        </script>
+    </body>
+</html>
