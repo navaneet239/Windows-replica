@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+
+        .window {
+            overflow: hidden;
+            background-color: rgb(240, 240, 240);
+            border: none;
+            border-radius: 0 0 8px 8px;
+            
+        }
+
+        .title-bar {
+            padding: 5px;
+            border-bottom: 1px solid rgba(209, 209, 209, 0.329);
+            background-color: rgba(240, 240, 240, 0.65);
+            backdrop-filter: blur(25px);
+            border-radius: 8px 8px 0 0;
+        }
+
+        .title-bar-text {
+            float: left;
+            font-size: 14px;
+            padding-left: 5px;
+        }
+
+        .title-bar-controls {
+            float: right;
+            margin-top: -5px;
+        }
+
+        .TbBtn {
+            padding: 6.5px;
+            border: none;
+            border-radius: 0;
+            background-color: transparent;
+            width: fit-content;
+            backdrop-filter: none;
+        }
+
+        .field-row {
+            float: right;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 8px;
+            border-radius: 4px;
+            border: 0.35px solid rgba(128, 128, 128, 0.25);
+            width: 90px;
+            background: rgba(128, 128, 128, 0.25);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="title-bar">
+        <div class="title-bar-text">
+          Windows 11
+        </div>
+
+        <div class="title-bar-controls">
+          <button class="TbBtn">—</button>
+          <button class="TbBtn">▢</button>
+          <button class="TbBtn">&#x2715;</button>
+        </div><br>
+      </div>
+    <div class="window" style="width: 100%; height: 100%;">
+        
+        <div class="window-body" style="padding: 5px;" id="Win10"><CENTER>
+          <p style="font-size: 16px;">
+            This is a replica of the Windows 11
+        </p>
+        <div style="padding: 25px;"><img src="../Assets/win11.png" width="137px" alt="11" ></div>
+          <div>
+            <section class="field-row" style="justify-content: flex-end; margin-bottom: 10px;">
+                <button>ok</button>
+                <button>cancel</button>
+            </section>
+          </div>
+        </CENTER></div>
+      </div>
+</body>
+</html>

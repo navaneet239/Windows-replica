@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <link rel="shortcut icon" href="Assets/winXp.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="style.css">
+        <title>Windows Xp</title>
+    </head>
+    <body class="bgWinXp">
+
+        <div class="startmenuWinXp" id="myStartMenuWinXp">
+            <img src="Assets/winXp_start.jpeg" alt="startmenu Windows Xp">
+        </div>
+
+        <div class="taskbarWinXp" id="myTaskbarWinXp">
+            <img src="Assets/winXp_tb.jpg" alt="taskbar Windows Xp">
+        </div>
+
+        <script>
+            let WinXpTb = document.getElementById("myTaskbarWinXp");
+            let WinXpStart = document.getElementById("myStartMenuWinXp");
+
+            WinXpTb.addEventListener("click", ()=>{
+                if(WinXpStart.style.visibility == "visible"){
+                    WinXpStart.style.visibility = "hidden";
+                }
+                else {
+                    WinXpStart.style.visibility = "visible";
+                }
+            })
+        </script>
+    </body>
+</html>

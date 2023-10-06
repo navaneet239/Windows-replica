@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+        <link rel="stylesheet" href="style.css">
+        <title>Windows</title>
+
+        <style>
+            body {
+                background-image: none;
+                background-size: cover;
+                background-position: center;
+                transition: all 1s ;
+                overflow: hidden;
+                overflow-y: scroll;
+                padding: 10px;
+            }
+
+            .dialogs {
+                display: none;
+                width: 100%;
+                transition: all 0.75s;
+                animation: popup 0.75s ;
+            }
+            .dialogs iframe{margin: 5px; box-shadow: 0px 0px 10px black; overflow: hidden;}
+            @keyframes popup {
+                0%{transform:  scale(0.01);
+                opacity: 0;}
+                50%{transform:  scale(1.05);
+                opacity: 1;}
+                100%{transform:  scale(0.98);
+                opacity: 1;}
+            }
+
+        </style>
+    </head>
+    <body onload="dl()" >
+        <CENTER>
+            <div class="dialogs" id="mydialogs" >
+                <iframe src="dialogs/95Db.html" frameborder="0" width="400px" height="300px" 
+                onmouseover="win95Bg()" onmouseleave="winBg()"></iframe>
+
+                <iframe src="dialogs/XpDb.html" frameborder="0" width="400px" height="300px" style="border-radius: 8px 8px 0 0;" onmouseover="winXpBg()"  onmouseleave="winBg()"></iframe>
+
+                <iframe src="dialogs/7Db.html" frameborder="0" width="400px" height="300px" style="border-radius: 8px 8px 0 0;" onmouseover="win7Bg()"  onmouseleave="winBg()"></iframe>
+
+                <iframe src="dialogs/10Db.html" frameborder="0" width="400px" height="300px"
+                onmouseover="win10Bg()" onmouseleave="winBg()"></iframe>
+
+                <iframe src="dialogs/11Db.html" frameborder="0" width="400px" height="300px" style="border-radius: 8px;"  onmouseover="win11Bg()"  onmouseleave="winBg()"></iframe>
+
+            </div>
+        </CENTER>
+        <script>
+
+            function dl() {
+                setTimeout(() => {
+                    document.getElementsByClassName("dialogs")[0].style.display = "block";
+                }, 250);
+            }
+
+            function win95Bg(){
+            document.body.style.backgroundImage = "url('Assets/win95_wall.jpg')";
+            }
+
+            function winXpBg(){
+            document.body.style.backgroundImage = "url('Assets/winXp_wall.jpg')";
+            }
+
+            function win7Bg(){
+            document.body.style.backgroundImage = "url('Assets/win7_wall.jpg')";
+            }
+
+            function win10Bg(){
+            document.body.style.backgroundImage = "url('Assets/win10_wall.jpg')";
+            }
+            
+            function win11Bg(){
+            document.body.style.backgroundImage = "url('Assets/win11_wall.png')";
+            }
+
+            function winBg(){
+            document.body.style.backgroundImage = "none";
+            }
+
+        </script>
+    </body>
+</html>
