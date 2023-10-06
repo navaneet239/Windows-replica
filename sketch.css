@@ -39,7 +39,7 @@ nav{
     background-color: #27272765;
     width: calc(100% - 22.5%);
     position: absolute;
-    height: calc(100% - 50px);
+    height: calc(100% - 60px);
     right: 0;
     transition: all 0.2s;
     border-radius:  5px 0 0 0 ;
