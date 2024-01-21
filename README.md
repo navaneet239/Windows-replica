@@ -24,6 +24,6 @@ wallpaper, it's taskbar and it's Start menu.
 </ul>
 You can start your trip by choosing any of the options in the navigation and start Experiencing it.</p>
 
-<p>Copyright (c) 2023 Navaneet Jaggannathan</p>
-> *This project isn't in any way affliated with microsoft and all the
+**Copyright (c) 2023 Navaneet Jaggannathan**
+>*This project isn't in any way affliated with microsoft and all the
   products are the trademarks of it.*
