@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+        <link rel="stylesheet" href="style.css">
+        <title>Windows 8</title>
+    </head>
+    <body class="bgWin7" style="background: url('https://i.stack.imgur.com/aE5oM.jpg');  background-size: cover;">
+
+        <div class="startmenuWin7" id="myStartMenuWin8"
+        onclick="
+            this.style.visibility = 'hidden';
+            this.style.opacity = '0';
+            this.style.transform = 'translateY(0px) translateX(1rem)'
+            ">
+            <img src="https://cdn.arstechnica.net/wp-content/uploads/2013/06/start-screen.png" alt="startmenu Windows 8">
+        </div>
+
+        <div class="taskbarWin7" id="myTaskbarWin7" 
+        onmouseover="document.getElementById('SHover').style.opacity = '1'"
+        onmouseleave="document.getElementById('SHover').style.opacity = '0'"
+        >
+            <img src="Assets/win8_tb.png" alt="taskbar Windows 8">
+        </div>
+        <img src="Assets/win8StartHover.png" id="SHover" style="pointer-events: none; position: absolute; bottom:0; left:0; z-index: 3; opacity: 0; width: 150px; height: 225px; transition: all 0.3s;">
+        <script>
+            let Win7Tb = document.getElementById("myTaskbarWin7");
+            let Win7Start = document.getElementById("myStartMenuWin8");
+
+            Win7Tb.addEventListener("click", ()=>{
+                if(Win7Start.style.visibility == "visible"){
+                    Win7Start.style.visibility = "hidden";  
+                    Win7Start.style.opacity = "0";
+                    Win7Start.style.transform = 'translateY(0px) translateX(1rem)'
+                }
+                else {
+                    Win7Start.style.visibility = "visible";
+                    Win7Start.style.opacity = "100%";
+                    Win7Start.style.transform = 'translateY(0px) translateX(0rem)'
+                }
+            })
+        </script>
+    </body>
+</html>

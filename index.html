@@ -1,257 +1,598 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="sketch.css" />
-    <link rel="shortcut icon" href="https://qph.cf2.quoracdn.net/main-qimg-01e7b6400981899b80055f9ad51454ea" type="image/x-icon">
-    <title>Win Replicas</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-  </head>
-  <body>
-    <header>
-      <img src="https://qph.cf2.quoracdn.net/main-qimg-01e7b6400981899b80055f9ad51454ea"/>
-      <h2>Win Replicas</h2>
-    </header>
-    <main>
-      <nav id="nav">
-        <div class="navOpt menuBtn"
-            onclick="functionNav()">
-            <span class="material-symbols-rounded"> menu </span>
-        </div>
-        <div class="navOpt" id="win95Btn"
-        onclick="
-        document.getElementById('dialogPg').style.display = 'none'
-        document.getElementById('win95Pg').style.display = 'block'
-        document.getElementById('winxpPg').style.display = 'none'
-        document.getElementById('win7Pg').style.display = 'none'
-        document.getElementById('win10Pg').style.display = 'none'
-        document.getElementById('win11Pg').style.display = 'none'
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="sketch.css" />
+  <link rel="shortcut icon" href="https://qph.cf2.quoracdn.net/main-qimg-01e7b6400981899b80055f9ad51454ea"
+    type="image/x-icon">
+  <title>Win Replicas</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+  <header>
+    <img src="https://qph.cf2.quoracdn.net/main-qimg-01e7b6400981899b80055f9ad51454ea" />
+    <h2>Win Replicas</h2>
+  </header>
+  <main>
+    <nav id="nav">
+      <div class="winNav">
+        <div class="navOpt" id="win1Btn" onclick="
         document.getElementById('aboutPg').style.display = 'none'
+        document.getElementById('iframeP').style.display = 'block'
+        document.getElementById('iframe').src = 'OSs/win1.html'
+
+        document.getElementById('dialogbtn').classList.remove('active')
+        document.getElementById('win95Btn').classList.remove('active')
+        document.getElementById('win8Btn').classList.remove('active')
+        document.getElementById('win8.1Btn').classList.remove('active')
+        document.getElementById('win98Btn').classList.remove('active')
+        document.getElementById('win2kBtn').classList.remove('active')
+        document.getElementById('winMeBtn').classList.remove('active')
+        document.getElementById('win1Btn').classList.add('active')
+        document.getElementById('win10xBtn').classList.remove('active')
+        document.getElementById('winVisBtn').classList.remove('active')
+        document.getElementById('win2Btn').classList.remove('active')
+        document.getElementById('win3Btn').classList.remove('active')
+        document.getElementById('winxpBtn').classList.remove('active')
+        document.getElementById('win7Btn').classList.remove('active')
+        document.getElementById('win10Btn').classList.remove('active')
+        document.getElementById('win11Btn').classList.remove('active')
+        document.getElementById('aboutBtn').classList.remove('active')
+        document.getElementById('winRBtn').classList.remove('active')
+      ">
+          <div class="navChips"></div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Windows_logo_-_1985-1989.svg/640px-Windows_logo_-_1985-1989.svg.png">
+          <p class="ptag">Windows 1.0</p>
+        </div>
+        <div class="navOpt" id="win2Btn" onclick="
+        document.getElementById('aboutPg').style.display = 'none'
+        document.getElementById('iframeP').style.display = 'block'
+        document.getElementById('iframe').src = 'OSs/win2.html'
+
+        document.getElementById('dialogbtn').classList.remove('active')
+        document.getElementById('win95Btn').classList.remove('active')
+        document.getElementById('win1Btn').classList.remove('active')
+        document.getElementById('win2kBtn').classList.remove('active')
+        document.getElementById('winMeBtn').classList.remove('active')
+        document.getElementById('win98Btn').classList.remove('active')
+        document.getElementById('win10xBtn').classList.remove('active')
+        document.getElementById('win8Btn').classList.remove('active')
+        document.getElementById('win8.1Btn').classList.remove('active')
+        document.getElementById('win3Btn').classList.remove('active')
+        document.getElementById('win2Btn').classList.add('active')
+        document.getElementById('winxpBtn').classList.remove('active')
+        document.getElementById('winVisBtn').classList.remove('active')
+        document.getElementById('win7Btn').classList.remove('active')
+        document.getElementById('win10Btn').classList.remove('active')
+        document.getElementById('win11Btn').classList.remove('active')
+        document.getElementById('aboutBtn').classList.remove('active')
+        document.getElementById('winRBtn').classList.remove('active')
+      ">
+          <div class="navChips"></div>
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/836c8789-c489-42de-ba9a-895ebcd74312/decn0pa-a28cc08f-48aa-43b2-8562-aeff0d01766f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgzNmM4Nzg5LWM0ODktNDJkZS1iYTlhLTg5NWViY2Q3NDMxMlwvZGVjbjBwYS1hMjhjYzA4Zi00OGFhLTQzYjItODU2Mi1hZWZmMGQwMTc2NmYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0._zESSGd_G5sZgTkDLhAzZMrTnoQUjf36ujKrSFIAgSM">
+          <p class="ptag">Windows 2.0</p>
+        </div>
+        <div class="navOpt" id="win3Btn" onclick="
+        document.getElementById('aboutPg').style.display = 'none'
+        document.getElementById('iframeP').style.display = 'block'
+        document.getElementById('iframe').src = 'OSs/win3.html'
+
+        document.getElementById('dialogbtn').classList.remove('active')
+        document.getElementById('win95Btn').classList.remove('active')
+        document.getElementById('win2kBtn').classList.remove('active')
+        document.getElementById('winMeBtn').classList.remove('active')
+        document.getElementById('win1Btn').classList.remove('active')
+        document.getElementById('win3Btn').classList.add('active')
+        document.getElementById('win98Btn').classList.remove('active')
+        document.getElementById('win10xBtn').classList.remove('active')
+        document.getElementById('win2Btn').classList.remove('active')
+        document.getElementById('winVisBtn').classList.remove('active')
+        document.getElementById('win8Btn').classList.remove('active')
+        document.getElementById('win8.1Btn').classList.remove('active')
+        document.getElementById('winxpBtn').classList.remove('active')
+        document.getElementById('win7Btn').classList.remove('active')
+        document.getElementById('win10Btn').classList.remove('active')
+        document.getElementById('win11Btn').classList.remove('active')
+        document.getElementById('aboutBtn').classList.remove('active')
+        document.getElementById('winRBtn').classList.remove('active')
+      ">
+          <div class="navChips"></div>
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/836c8789-c489-42de-ba9a-895ebcd74312/decn0pa-a28cc08f-48aa-43b2-8562-aeff0d01766f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgzNmM4Nzg5LWM0ODktNDJkZS1iYTlhLTg5NWViY2Q3NDMxMlwvZGVjbjBwYS1hMjhjYzA4Zi00OGFhLTQzYjItODU2Mi1hZWZmMGQwMTc2NmYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0._zESSGd_G5sZgTkDLhAzZMrTnoQUjf36ujKrSFIAgSM">
+          <p class="ptag">Windows 3.0</p>
+        </div>
+        <div class="navOpt" id="win95Btn" onclick="
+        document.getElementById('aboutPg').style.display = 'none'
+        document.getElementById('iframeP').style.display = 'block'
+        document.getElementById('iframe').src = 'OSs/win95.html'
 
         document.getElementById('dialogbtn').classList.remove('active')
         document.getElementById('win95Btn').classList.add('active')
+        document.getElementById('win98Btn').classList.remove('active')
+        document.getElementById('win2kBtn').classList.remove('active')
+        document.getElementById('winMeBtn').classList.remove('active')
+        document.getElementById('win1Btn').classList.remove('active')
+        document.getElementById('win2Btn').classList.remove('active')
+        document.getElementById('win3Btn').classList.remove('active')
+        document.getElementById('win10xBtn').classList.remove('active')
+        document.getElementById('win8Btn').classList.remove('active')
+        document.getElementById('win8.1Btn').classList.remove('active')
         document.getElementById('winxpBtn').classList.remove('active')
+        document.getElementById('winVisBtn').classList.remove('active')
         document.getElementById('win7Btn').classList.remove('active')
         document.getElementById('win10Btn').classList.remove('active')
         document.getElementById('win11Btn').classList.remove('active')
         document.getElementById('aboutBtn').classList.remove('active')
+        document.getElementById('winRBtn').classList.remove('active')
       ">
           <div class="navChips"></div>
-          <img src="Assets/win95.png" >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Windows_Logo_%281992-2001%29.svg/888px-Windows_Logo_%281992-2001%29.svg.png">
           <p class="ptag">Windows 95</p>
         </div>
-        <div class="navOpt" id="winxpBtn"
-        onclick="
-        document.getElementById('dialogPg').style.display = 'none'
-        document.getElementById('win95Pg').style.display = 'none'
-        document.getElementById('winxpPg').style.display = 'block'
-        document.getElementById('win7Pg').style.display = 'none'
-        document.getElementById('win10Pg').style.display = 'none'
-        document.getElementById('win11Pg').style.display = 'none'
+        <div class="navOpt" id="win98Btn" onclick="
         document.getElementById('aboutPg').style.display = 'none'
+        document.getElementById('iframeP').style.display = 'block'
+        document.getElementById('iframe').src = 'OSs/win98.html'
 
         document.getElementById('dialogbtn').classList.remove('active')
         document.getElementById('win95Btn').classList.remove('active')
-        document.getElementById('winxpBtn').classList.add('active')
+        document.getElementById('win98Btn').classList.add('active')
+        document.getElementById('win2kBtn').classList.remove('active')
+        document.getElementById('win8Btn').classList.remove('active')
+        document.getElementById('win8.1Btn').classList.remove('active')
+        document.getElementById('winMeBtn').classList.remove('active')
+        document.getElementById('win1Btn').classList.remove('active')
+        document.getElementById('win2Btn').classList.remove('active')
+        document.getElementById('win10xBtn').classList.remove('active')
+        document.getElementById('winVisBtn').classList.remove('active')
+        document.getElementById('win3Btn').classList.remove('active')
+        document.getElementById('winxpBtn').classList.remove('active')
         document.getElementById('win7Btn').classList.remove('active')
         document.getElementById('win10Btn').classList.remove('active')
         document.getElementById('win11Btn').classList.remove('active')
         document.getElementById('aboutBtn').classList.remove('active')
+        document.getElementById('winRBtn').classList.remove('active')
       ">
           <div class="navChips"></div>
-          <img src="Assets/winXp.png" >
-          <p class="ptag">Windows XP</p>
+          <img src="Assets-files/win95.png">
+          <p class="ptag">Windows 98</p>
         </div>
-        <div class="navOpt" id="win7Btn"
-        onclick="
-        document.getElementById('dialogPg').style.display = 'none'
-        document.getElementById('win95Pg').style.display = 'none'
-        document.getElementById('winxpPg').style.display = 'none'
-        document.getElementById('win7Pg').style.display = 'block'
-        document.getElementById('win10Pg').style.display = 'none'
-        document.getElementById('win11Pg').style.display = 'none'
+        <div class="navOpt" id="win2kBtn" onclick="
         document.getElementById('aboutPg').style.display = 'none'
+        document.getElementById('iframeP').style.display = 'block'
+        document.getElementById('iframe').src = 'OSs/win2000.html'
 
         document.getElementById('dialogbtn').classList.remove('active')
+        document.getElementById('win2kBtn').classList.add('active')
+        document.getElementById('winMeBtn').classList.remove('active')
         document.getElementById('win95Btn').classList.remove('active')
+        document.getElementById('win98Btn').classList.remove('active')
+        document.getElementById('win1Btn').classList.remove('active')
+        document.getElementById('win2Btn').classList.remove('active')
+        document.getElementById('win10xBtn').classList.remove('active')
+        document.getElementById('winVisBtn').classList.remove('active')
+        document.getElementById('win3Btn').classList.remove('active')
         document.getElementById('winxpBtn').classList.remove('active')
-        document.getElementById('win7Btn').classList.add('active')
+        document.getElementById('win8Btn').classList.remove('active')
+        document.getElementById('win8.1Btn').classList.remove('active')
+        document.getElementById('win7Btn').classList.remove('active')
         document.getElementById('win10Btn').classList.remove('active')
         document.getElementById('win11Btn').classList.remove('active')
         document.getElementById('aboutBtn').classList.remove('active')
+        document.getElementById('winRBtn').classList.remove('active')
       ">
           <div class="navChips"></div>
-          <img src="Assets/win7.png" >
-          <p class="ptag">Windows 7</p>
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7da8855e-55d1-4cd3-ba5b-f8f32c4cdc1d/df4yf8e-9165beb9-611c-4680-9a6a-da09ebf24311.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdkYTg4NTVlLTU1ZDEtNGNkMy1iYTViLWY4ZjMyYzRjZGMxZFwvZGY0eWY4ZS05MTY1YmViOS02MTFjLTQ2ODAtOWE2YS1kYTA5ZWJmMjQzMTEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JcxJDY5-pg9JAvCZrbpWaBWJ_p-0s2Gag91lGICtngs">
+          <p class="ptag">Windows 2000</p>
         </div>
-        <div class="navOpt" id="win10Btn"
-        onclick="
-        document.getElementById('dialogPg').style.display = 'none'
-        document.getElementById('win95Pg').style.display = 'none'
-        document.getElementById('winxpPg').style.display = 'none'
-        document.getElementById('win7Pg').style.display = 'none'
-        document.getElementById('win10Pg').style.display = 'block'
-        document.getElementById('win11Pg').style.display = 'none'
+        <div class="navOpt" id="winMeBtn" onclick="
         document.getElementById('aboutPg').style.display = 'none'
+        document.getElementById('iframeP').style.display = 'block'
+        document.getElementById('iframe').src = 'OSs/winMe.html'
+
+        document.getElementById('dialogbtn').classList.remove('active')
+        document.getElementById('winMeBtn').classList.add('active')
+        document.getElementById('win2kBtn').classList.remove('active')
+        document.getElementById('win95Btn').classList.remove('active')
+        document.getElementById('win98Btn').classList.remove('active')
+        document.getElementById('win1Btn').classList.remove('active')
+        document.getElementById('win10xBtn').classList.remove('active')
+        document.getElementById('win2Btn').classList.remove('active')
+        document.getElementById('win3Btn').classList.remove('active')
+        document.getElementById('win8Btn').classList.remove('active')
+        document.getElementById('win8.1Btn').classList.remove('active')
+        document.getElementById('winVisBtn').classList.remove('active')
+        document.getElementById('winxpBtn').classList.remove('active')
+        document.getElementById('win7Btn').classList.remove('active')
+        document.getElementById('win10Btn').classList.remove('active')
+        document.getElementById('win11Btn').classList.remove('active')
+        document.getElementById('aboutBtn').classList.remove('active')
+        document.getElementById('winRBtn').classList.remove('active')
+      ">
+          <div class="navChips"></div>
+          <img src="https://i.pinimg.com/originals/b6/83/85/b68385cbd24ca1f28e10e41c31dc7eb2.png">
+          <p class="ptag">Windows Me</p>
+        </div>
+        <div class="navOpt" id="winxpBtn" onclick="
+        document.getElementById('aboutPg').style.display = 'none'
+        document.getElementById('iframeP').style.display = 'block'
+        document.getElementById('iframe').src = 'OSs/winXp.html'
 
         document.getElementById('dialogbtn').classList.remove('active')
         document.getElementById('win95Btn').classList.remove('active')
+        document.getElementById('win98Btn').classList.remove('active')
+        document.getElementById('winxpBtn').classList.add('active')
+        document.getElementById('win2kBtn').classList.remove('active')
+        document.getElementById('winMeBtn').classList.remove('active')
+        document.getElementById('win10xBtn').classList.remove('active')
+        document.getElementById('winVisBtn').classList.remove('active')
+        document.getElementById('win1Btn').classList.remove('active')
+        document.getElementById('win8Btn').classList.remove('active')
+        document.getElementById('win8.1Btn').classList.remove('active')
+        document.getElementById('win2Btn').classList.remove('active')
+        document.getElementById('win3Btn').classList.remove('active')
+        document.getElementById('win7Btn').classList.remove('active')
+        document.getElementById('win10Btn').classList.remove('active')
+        document.getElementById('win11Btn').classList.remove('active')
+        document.getElementById('aboutBtn').classList.remove('active')
+        document.getElementById('winRBtn').classList.remove('active')
+      ">
+          <div class="navChips"></div>
+          <img src="Assets-files/winXp.png">
+          <p class="ptag">Windows XP</p>
+        </div>
+        <div class="navOpt"  id="winVisBtn" onclick="
+        document.getElementById('aboutPg').style.display = 'none'
+        document.getElementById('iframeP').style.display = 'block'
+        document.getElementById('iframe').src = 'OSs/winVista.html'
+
+        document.getElementById('dialogbtn').classList.remove('active')
+        document.getElementById('win95Btn').classList.remove('active')
+        document.getElementById('win2kBtn').classList.remove('active')
+        document.getElementById('winMeBtn').classList.remove('active')
+        document.getElementById('win98Btn').classList.remove('active')
+        document.getElementById('winxpBtn').classList.remove('active')
+        document.getElementById('win10xBtn').classList.remove('active')
+        document.getElementById('win7Btn').classList.remove('active')
+        document.getElementById('winVisBtn').classList.add('active')
+        document.getElementById('win1Btn').classList.remove('active')
+        document.getElementById('win2Btn').classList.remove('active')
+        document.getElementById('win3Btn').classList.remove('active')
+        document.getElementById('win8Btn').classList.remove('active')
+        document.getElementById('win8.1Btn').classList.remove('active')
+        document.getElementById('win10Btn').classList.remove('active')
+        document.getElementById('win11Btn').classList.remove('active')
+        document.getElementById('aboutBtn').classList.remove('active')
+        document.getElementById('winRBtn').classList.remove('active')
+      ">
+          <div class="navChips"></div>
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2b7f449a-caf4-4e8f-85d2-756552080ab7/d2d6qv3-9afe61d2-5656-4dad-93b2-a4802948835d.png/v1/fill/w_600,h_599/windows_vista_logo_by_francr2009_d2d6qv3-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTk5IiwicGF0aCI6IlwvZlwvMmI3ZjQ0OWEtY2FmNC00ZThmLTg1ZDItNzU2NTUyMDgwYWI3XC9kMmQ2cXYzLTlhZmU2MWQyLTU2NTYtNGRhZC05M2IyLWE0ODAyOTQ4ODM1ZC5wbmciLCJ3aWR0aCI6Ijw9NjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Keq2OhFsydRRUEtmOrCIicDRUx_wsOcXxfV9Ly5DBeg"
+            style="scale: 1.2">
+          <p class="ptag">Windows Vista</p>
+        </div>
+        <div class="navOpt" id="win7Btn" onclick="
+        document.getElementById('aboutPg').style.display = 'none'
+        document.getElementById('iframeP').style.display = 'block'
+        document.getElementById('iframe').src = 'OSs/win7.html'
+
+        document.getElementById('dialogbtn').classList.remove('active')
+        document.getElementById('win95Btn').classList.remove('active')
+        document.getElementById('win2kBtn').classList.remove('active')
+        document.getElementById('winMeBtn').classList.remove('active')
+        document.getElementById('win98Btn').classList.remove('active')
+        document.getElementById('winxpBtn').classList.remove('active')
+        document.getElementById('win7Btn').classList.add('active')
+        document.getElementById('winVisBtn').classList.remove('active')
+        document.getElementById('win10xBtn').classList.remove('active')
+        document.getElementById('win1Btn').classList.remove('active')
+        document.getElementById('win2Btn').classList.remove('active')
+        document.getElementById('win3Btn').classList.remove('active')
+        document.getElementById('win10Btn').classList.remove('active')
+        document.getElementById('win11Btn').classList.remove('active')
+        document.getElementById('aboutBtn').classList.remove('active')
+        document.getElementById('win8Btn').classList.remove('active')
+        document.getElementById('win8.1Btn').classList.remove('active')
+        document.getElementById('winRBtn').classList.remove('active')
+      ">
+          <div class="navChips"></div>
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3add4427-b736-45cc-ae80-0ee1b5444f82/d3hzmjf-606b2c73-251e-47c4-a0ff-d4fe146ceccf.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNhZGQ0NDI3LWI3MzYtNDVjYy1hZTgwLTBlZTFiNTQ0NGY4MlwvZDNoem1qZi02MDZiMmM3My0yNTFlLTQ3YzQtYTBmZi1kNGZlMTQ2Y2VjY2YucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.69qCgDtfndzmmQns2NKxLZxVtXwv0VZjcQnI41-kZyg">
+          <p class="ptag">Windows 7</p>
+        </div>
+        <div class="navOpt" id="win8Btn" onclick="
+        document.getElementById('aboutPg').style.display = 'none'
+        document.getElementById('iframeP').style.display = 'block'
+        document.getElementById('iframe').src = 'OSs/win8.html'
+
+        document.getElementById('dialogbtn').classList.remove('active')
+        document.getElementById('win95Btn').classList.remove('active')
+        document.getElementById('win98Btn').classList.remove('active')
+        document.getElementById('win2kBtn').classList.remove('active')
+        document.getElementById('winMeBtn').classList.remove('active')
+        document.getElementById('win1Btn').classList.remove('active')
+        document.getElementById('win8Btn').classList.add('active')
+        document.getElementById('win8.1Btn').classList.remove('active')
+        document.getElementById('win10xBtn').classList.remove('active')
+        document.getElementById('winVisBtn').classList.remove('active')
+        document.getElementById('win2Btn').classList.remove('active')
+        document.getElementById('win3Btn').classList.remove('active')
+        document.getElementById('winxpBtn').classList.remove('active')
+        document.getElementById('win7Btn').classList.remove('active')
+        document.getElementById('win10Btn').classList.remove('active')
+        document.getElementById('win11Btn').classList.remove('active')
+        document.getElementById('aboutBtn').classList.remove('active')
+        document.getElementById('winRBtn').classList.remove('active')
+      ">
+          <div class="navChips"></div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/768px-Windows_logo_-_2012.svg.png">
+          <p class="ptag">Windows 8</p>
+        </div>
+        <div class="navOpt"  id="win8.1Btn" onclick="
+        document.getElementById('aboutPg').style.display = 'none'
+        document.getElementById('iframeP').style.display = 'block'
+        document.getElementById('iframe').src = 'OSs/win8.1.html'
+
+        document.getElementById('dialogbtn').classList.remove('active')
+        document.getElementById('win95Btn').classList.remove('active')
+        document.getElementById('win98Btn').classList.remove('active')
+        document.getElementById('win2kBtn').classList.remove('active')
+        document.getElementById('winMeBtn').classList.remove('active')
+        document.getElementById('win1Btn').classList.remove('active')
+        document.getElementById('win8Btn').classList.remove('active')
+        document.getElementById('win8.1Btn').classList.add('active')
+        document.getElementById('win10xBtn').classList.remove('active')
+        document.getElementById('winVisBtn').classList.remove('active')
+        document.getElementById('win2Btn').classList.remove('active')
+        document.getElementById('win3Btn').classList.remove('active')
+        document.getElementById('winxpBtn').classList.remove('active')
+        document.getElementById('win7Btn').classList.remove('active')
+        document.getElementById('win10Btn').classList.remove('active')
+        document.getElementById('win11Btn').classList.remove('active')
+        document.getElementById('aboutBtn').classList.remove('active')
+        document.getElementById('winRBtn').classList.remove('active')
+      ">
+          <div class="navChips"></div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Windows_logo_-_2012.png/640px-Windows_logo_-_2012.png">
+          <p class="ptag">Windows 8.1</p>
+        </div>
+        <div class="navOpt" id="win10Btn" onclick="
+        document.getElementById('aboutPg').style.display = 'none'
+        document.getElementById('iframeP').style.display = 'block'
+        document.getElementById('iframe').src = 'OSs/win10.html'
+
+        document.getElementById('dialogbtn').classList.remove('active')
+        document.getElementById('win95Btn').classList.remove('active')
+        document.getElementById('win2kBtn').classList.remove('active')
+        document.getElementById('winMeBtn').classList.remove('active')
+        document.getElementById('win1Btn').classList.remove('active')
+        document.getElementById('winVisBtn').classList.remove('active')
+        document.getElementById('win98Btn').classList.remove('active')
+        document.getElementById('win10xBtn').classList.remove('active')
+        document.getElementById('win2Btn').classList.remove('active')
+        document.getElementById('win3Btn').classList.remove('active')
         document.getElementById('winxpBtn').classList.remove('active')
         document.getElementById('win7Btn').classList.remove('active')
         document.getElementById('win10Btn').classList.add('active')
         document.getElementById('win11Btn').classList.remove('active')
         document.getElementById('aboutBtn').classList.remove('active')
+        document.getElementById('winRBtn').classList.remove('active')
+        document.getElementById('win8Btn').classList.remove('active')
+        document.getElementById('win8.1Btn').classList.remove('active')
       ">
           <div class="navChips"></div>
-          <img src="Assets/win10.png" >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Windows_logo_-_2012_%28dark_blue%29.svg/800px-Windows_logo_-_2012_%28dark_blue%29.svg.png">
           <p class="ptag">Windows 10</p>
         </div>
-        <div class="navOpt" id="win11Btn"
-        onclick="
-        document.getElementById('dialogPg').style.display = 'none'
-        document.getElementById('win95Pg').style.display = 'none'
-        document.getElementById('winxpPg').style.display = 'none'
-        document.getElementById('win7Pg').style.display = 'none'
-        document.getElementById('win10Pg').style.display = 'none'
-        document.getElementById('win11Pg').style.display = 'block'
+        <div class="navOpt"  id="win10xBtn" onclick="
         document.getElementById('aboutPg').style.display = 'none'
+        document.getElementById('iframeP').style.display = 'block'
+        document.getElementById('iframe').src = 'OSs/win10x.html'
 
         document.getElementById('dialogbtn').classList.remove('active')
         document.getElementById('win95Btn').classList.remove('active')
+        document.getElementById('win98Btn').classList.remove('active')
+        document.getElementById('win2kBtn').classList.remove('active')
+        document.getElementById('winMeBtn').classList.remove('active')
+        document.getElementById('win10xBtn').classList.add('active')
+        document.getElementById('win1Btn').classList.remove('active')
+        document.getElementById('winVisBtn').classList.remove('active')
+        document.getElementById('win2Btn').classList.remove('active')
+        document.getElementById('win3Btn').classList.remove('active')
         document.getElementById('winxpBtn').classList.remove('active')
+        document.getElementById('win7Btn').classList.remove('active')
+        document.getElementById('win10Btn').classList.remove('active')
+        document.getElementById('win11Btn').classList.remove('active')
+        document.getElementById('aboutBtn').classList.remove('active')
+        document.getElementById('winRBtn').classList.remove('active')
+        document.getElementById('win8Btn').classList.remove('active')
+        document.getElementById('win8.1Btn').classList.remove('active')
+      ">
+          <div class="navChips"></div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Windows_10x_Icon.png">
+          <p class="ptag">Windows 10x</p>
+        </div>
+        <div class="navOpt" id="win11Btn" onclick="
+        document.getElementById('aboutPg').style.display = 'none'
+        document.getElementById('iframeP').style.display = 'block'
+        document.getElementById('iframe').src = 'OSs/win11.html'
+
+        document.getElementById('dialogbtn').classList.remove('active')
+        document.getElementById('win98Btn').classList.remove('active')
+        document.getElementById('win95Btn').classList.remove('active')
+        document.getElementById('win2kBtn').classList.remove('active')
+        document.getElementById('winMeBtn').classList.remove('active')
+        document.getElementById('win10xBtn').classList.remove('active')
+        document.getElementById('winxpBtn').classList.remove('active')
+        document.getElementById('win1Btn').classList.remove('active')
+        document.getElementById('winVisBtn').classList.remove('active')
+        document.getElementById('win2Btn').classList.remove('active')
+        document.getElementById('win3Btn').classList.remove('active')
         document.getElementById('win7Btn').classList.remove('active')
         document.getElementById('win10Btn').classList.remove('active')
         document.getElementById('win11Btn').classList.add('active')
         document.getElementById('aboutBtn').classList.remove('active')
+        document.getElementById('winRBtn').classList.remove('active')
+        document.getElementById('win8Btn').classList.remove('active')
+        document.getElementById('win8.1Btn').classList.remove('active')
       ">
           <div class="navChips"></div>
-          <img src="Assets/win11.png" >
+          <img src="Assets-files/win11.png">
           <p class="ptag">Windows 11</p>
         </div>
-        <hr>
-        <div class="navOpt" id="dialogbtn"
-        onclick="
+      </div>
+      <hr>
+      <div class="navOpt" id="dialogbtn" onclick="
           document.getElementById('aboutPg').style.display = 'none'
-          document.getElementById('win95Pg').style.display = 'none'
-          document.getElementById('winxpPg').style.display = 'none'
-          document.getElementById('win7Pg').style.display = 'none'
-          document.getElementById('win10Pg').style.display = 'none'
-          document.getElementById('win11Pg').style.display = 'none'
-
-          document.getElementById('dialogPg').style.display = 'block'
+          document.getElementById('iframeP').style.display = 'block'
+          document.getElementById('iframe').src = 'dialogs.html'
 
           document.getElementById('aboutBtn').classList.remove('active')
           document.getElementById('win95Btn').classList.remove('active')
+          document.getElementById('win98Btn').classList.remove('active')
+        document.getElementById('win2kBtn').classList.remove('active')
+        document.getElementById('winMeBtn').classList.remove('active')
+          document.getElementById('winxpBtn').classList.remove('active')
+          document.getElementById('win1Btn').classList.remove('active')
+        document.getElementById('win2Btn').classList.remove('active')
+        document.getElementById('win10xBtn').classList.remove('active')
+        document.getElementById('win3Btn').classList.remove('active')
+        document.getElementById('winVisBtn').classList.remove('active')
+          document.getElementById('win7Btn').classList.remove('active')
+          document.getElementById('win10Btn').classList.remove('active')
+          document.getElementById('win11Btn').classList.remove('active')
+          document.getElementById('winRBtn').classList.remove('active')
+        document.getElementById('win8Btn').classList.remove('active')
+        document.getElementById('win8.1Btn').classList.remove('active')
+
+          document.getElementById('dialogbtn').classList.add('active')
+        ">
+        <div class="navChips"></div>
+        <img
+          src="data:image/png;base64,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"
+          style="scale: 1.2;">
+        <p class="ptag">Windows Dialog Box</p>
+      </div>
+      <div class="navOpt" title="Custom Windows Concept on the web!!" id="winRBtn" onclick="
+          document.getElementById('aboutPg').style.display = 'none'
+          document.getElementById('iframeP').style.display = 'block'
+          document.getElementById('iframe').src = 'https:/ripenos.github.io/WinRipen'
+
+          document.getElementById('aboutBtn').classList.remove('active')
+          document.getElementById('win95Btn').classList.remove('active')
+          document.getElementById('win98Btn').classList.remove('active')
+          document.getElementById('win1Btn').classList.remove('active')
+        document.getElementById('win2kBtn').classList.remove('active')
+        document.getElementById('winMeBtn').classList.remove('active')
+        document.getElementById('win2Btn').classList.remove('active')
+        document.getElementById('win3Btn').classList.remove('active')
+        document.getElementById('winVisBtn').classList.remove('active')
+        document.getElementById('win10xBtn').classList.remove('active')
           document.getElementById('winxpBtn').classList.remove('active')
           document.getElementById('win7Btn').classList.remove('active')
           document.getElementById('win10Btn').classList.remove('active')
           document.getElementById('win11Btn').classList.remove('active')
+          document.getElementById('dialogbtn').classList.remove('active')
+        document.getElementById('win8Btn').classList.remove('active')
+        document.getElementById('win8.1Btn').classList.remove('active')
 
-          document.getElementById('dialogbtn').classList.add('active')
+          document.getElementById('winRBtn').classList.add('active')
         ">
-          <div class="navChips"></div>
-          <span class="material-symbols-rounded"> dialogs </span>
-          <p class="ptag">Windows Dialog Box</p>
-        </div>
-        <div class="navOpt bottom active" id="aboutBtn"
-        onclick="
-        document.getElementById('dialogPg').style.display = 'none'
-        document.getElementById('win95Pg').style.display = 'none'
-        document.getElementById('winxpPg').style.display = 'none'
-        document.getElementById('win7Pg').style.display = 'none'
-        document.getElementById('win10Pg').style.display = 'none'
-        document.getElementById('win11Pg').style.display = 'none'
-
+        <div class="navChips orange"></div>
+        <img src="Assets-files/ripen.png" alt="">
+        <p class="ptag">Windows Ripen</p>
+      </div>
+      <hr>
+      <div class="navOpt active" id="aboutBtn" onclick="
+        document.getElementById('iframeP').style.display = 'none'
         document.getElementById('aboutPg').style.display = 'block'
 
         document.getElementById('dialogbtn').classList.remove('active')
         document.getElementById('win95Btn').classList.remove('active')
         document.getElementById('winxpBtn').classList.remove('active')
+        document.getElementById('win2kBtn').classList.remove('active')
+        document.getElementById('winMeBtn').classList.remove('active')
+        document.getElementById('win98Btn').classList.remove('active')
         document.getElementById('win7Btn').classList.remove('active')
+        document.getElementById('win1Btn').classList.remove('active')
+        document.getElementById('win10xBtn').classList.remove('active')
+        document.getElementById('winVisBtn').classList.remove('active')
+        document.getElementById('win2Btn').classList.remove('active')
+        document.getElementById('win3Btn').classList.remove('active')
         document.getElementById('win10Btn').classList.remove('active')
         document.getElementById('win11Btn').classList.remove('active')
+        document.getElementById('winRBtn').classList.remove('active')
+        document.getElementById('win8Btn').classList.remove('active')
+        document.getElementById('win8.1Btn').classList.remove('active')
 
         document.getElementById('aboutBtn').classList.add('active')
       ">
-          <div class="navChips"></div>
-          <span class="material-symbols-rounded"> info </span>
-          <p class="ptag">About</p>
-        </div>
-      </nav>
-
-      <div class="container" id="container">
-        <div id="aboutPg">
-            <h1>WIN REPLICAS</h1>
-            <h3>By <a href="https://navaneet239.github.io">Navaneet</a></h3>
-            <p id="desc">Win Replicas lets you experience the look and feel of classic Windows operating systems right from your web browser. It covers Windows 95, XP, 7, 10, and even the latest, Windows 11. Using web applications, it mimics the desktop of these systems, giving you a nostalgic trip through the evolution of Windows and its familiar dialog boxes that defined each Windows version. It's like a time machine for your computer, bringing back the vibes of these iconic interfaces.</p>
-            <div class="footer">
-                <p>Copyright (c) 2023 Navaneet Jaggannathan</p>
-                <p style="opacity: 0.5; font-weight: bold;">This project isn't in any way affliated with microsoft and all the products are the trademarks of it.* </p>
-            </div>
-        </div>
-        <div id="dialogPg">
-          <iframe src="dialogs.html" frameborder="0"></iframe>
-        </div>
-        <div id="win95Pg">
-          <iframe src="win95.html" frameborder="0"></iframe>
-        </div>
-        <div id="winxpPg">
-          <iframe src="winXp.html" frameborder="0"></iframe>
-        </div>
-        <div id="win7Pg">
-          <iframe src="win7.html" frameborder="0"></iframe>
-        </div>
-        <div id="win10Pg">
-          <iframe src="win10.html" frameborder="0"></iframe>
-        </div>
-        <div id="win11Pg">
-          <iframe src="win11.html" frameborder="0"></iframe>
-        </div>
-
+        <div class="navChips"></div>
+        <img src="https://img.icons8.com/fluency/48/info.png" alt="info" style="scale: 1.2;" />
+        <p class="ptag">About</p>
       </div>
-    </main>
-    <div class="phoneOps">
-      <h1>Opps! Win replicas dont yet support smaller screens...</h1>
-    </div>
-    <script>
-        function functionNav(){
-        if( document.getElementById('nav').style.width == '42.5px'){
-            document.getElementById('nav').style.width = 'calc(100% - 78.5%)'
-            document.getElementById('aboutBtn').style.width = 'calc(100% - 78.5%)'
-            document.getElementById('container').style.transition = 'all 0.2s'
-            document.getElementById('container').style.left = 'auto'
-            document.getElementById('container').style.right = '0'
-            document.getElementById('container').style.width = 'calc(100% - 22.5%)'
-            setTimeout(() => {
-                document.getElementsByClassName('ptag')[0].style.display = 'block'
-                document.getElementsByClassName('ptag')[1].style.display = 'block'
-                document.getElementsByClassName('ptag')[2].style.display = 'block'
-                document.getElementsByClassName('ptag')[3].style.display = 'block'
-                document.getElementsByClassName('ptag')[4].style.display = 'block'
-                document.getElementsByClassName('ptag')[5].style.display = 'block'
-                document.getElementsByClassName('ptag')[6].style.display = 'block'
-            }, 100);
-        }
-        else{
-                document.getElementById('nav').style.width = '42.5px'
-            document.getElementsByClassName('ptag')[0].style.display = 'none'
-            document.getElementsByClassName('ptag')[1].style.display = 'none'
-            document.getElementsByClassName('ptag')[2].style.display = 'none'
-            document.getElementsByClassName('ptag')[3].style.display = 'none'
-            document.getElementsByClassName('ptag')[4].style.display = 'none'
-            document.getElementsByClassName('ptag')[5].style.display = 'none'
-            document.getElementsByClassName('ptag')[6].style.display = 'none'
+    </nav>
 
-            document.getElementById('aboutBtn').style.width = '42.5px'
-            document.getElementById('container').style.transition = 'all 0s'
-            document.getElementById('container').style.right = 'auto'
-            document.getElementById('container').style.left = '57.5px'
-            document.getElementById('container').style.width = 'calc(100% - 57.5px)'
-        }
-        }
-    </script>
-  </body>
+    <div class="container" id="container">
+      <div id="aboutPg">
+        <div style="display: flex; align-items: end;">
+          <h1>WIN REPLICAS</h1>
+          <p
+            style="color: rgb(96.18225529789925, 205.34710675477982, 255); font-weight: 800; margin-bottom: 10px; font-size: 20px;">
+            v2.0</p>
+        </div>
+        <h3>By <a href="https://navaneet239.github.io">Navaneet J.</a></h3>
+        <div id="desc">Win Replicas is like a time machine which takes you back to the 1st release of Windows to the
+          latest version. Using web applications, it
+          mimics the desktop of these versions, giving you a nostalgic trip through the evolution of Windows and its
+          familiar dialog boxes that defined each Windows version. Each destination or versions has it's native
+          wallpaper, it's taskbar and it's Start menu.
+          <br>
+          The major destinations or versions in your trip are:
+          <ul>
+            <li>Windows 1.0</li>
+            <li>Windows 2.0</li>
+            <li>Windows 3.0</li>
+            <li>Windows 95</li>
+            <li>Windows 2000</li>
+            <li>Windows Me</li>
+            <li>Windows XP</li>
+            <li>Windows Vista</li>
+            <li>Windows 7</li>
+            <li>Windows 8</li>
+            <li>Windows 8.1</li>
+            <li>Windows 10</li>
+            <li>Windows 10x</li>
+            <li>Windows 11</li>
+          </ul>
+          You can start your trip by choosing any of the options in the navigation and start Experiencing it.</p>
+          <br>
+          <p>Copyright (c) 2023 Navaneet Jaggannathan</p>
+          <p style=" font-weight: bold;">This project isn't in any way affliated with microsoft and all the
+            products are the trademarks of it.*</p>
+        </div>
+      </div>
+      <div id="iframeP">
+        <iframe src="dialogs.html" frameborder="0" id="iframe"></iframe>
+      </div>
+    </div>
+  </main>
+  <div class="phoneOps">
+    <h1>Opps! Win replicas dont yet support smaller screens...</h1>
+  </div>
+  <script>
+
+  </script>
+</body>
+
 </html>

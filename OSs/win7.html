@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+        <link rel="stylesheet" href="style.css">
+        <title>Windows 7</title>
+    </head>
+    <body class="bgWin7">
+
+        <div class="startmenuWin7" id="myStartMenuWin7">
+            <img src="Assets/win7_start.png" alt="startmenu Windows 7">
+        </div>
+
+        <div class="taskbarWin7" id="myTaskbarWin7">
+            <img src="Assets/win7_tb.jpg" alt="taskbar Windows 7">
+        </div>
+
+        <script>
+            let Win7Tb = document.getElementById("myTaskbarWin7");
+            let Win7Start = document.getElementById("myStartMenuWin7");
+
+            Win7Tb.addEventListener("click", ()=>{
+                if(Win7Start.style.visibility == "visible"){
+                    Win7Start.style.visibility = "hidden";
+                    Win7Start.style.opacity = "0";
+                }
+                else {
+                    Win7Start.style.visibility = "visible";
+                    Win7Start.style.opacity = "100%";
+                }
+            })
+        </script>
+    </body>
+</html>

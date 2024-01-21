@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 1.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <style>
+        *{padding: 0; margin: 0; box-sizing: border-box; font-family: 'Pixelify Sans', sans-serif;}
+        body{background-color: #ffff; user-select: none;}
+        .nav{
+            background-color: #5757ff;
+            border: 2px solid black;
+            height: 45px;
+            display: flex;
+            width: 100%;
+        }
+        .nav h1{
+            transform: scaleX(0.8) scaleY(1.25) translateX(-20px);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        mark {
+        background-color: black;
+        color: white;
+        padding-left: 5px;
+        padding-right: 5px;
+        }
+        .menuICO{
+            background-color: white;
+            border: none;
+            border-right: 3px solid black;
+            width: 41.5px;
+            height: 41.5px;
+            font-size: 45px;
+            font-weight: 550;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        .field-row {
+            float: right;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        button{
+            border-radius: 8px;
+            width: 100px;
+            margin-left: 5px;
+            background-color: white;
+            padding: 5px;
+            padding-top: 0; padding-bottom: 0;
+            transform: scaleY(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="nav">
+            <div class="menuICO">—</div>
+            <h1><mark>Windows 1.0</mark></h1>
+        </div>
+    </div>
+
+    <div class="window-body" style="padding: 5px;" id="Win10"><CENTER>
+        <p style="font-size: 16px;">
+          This is a similar replica of the Windows 1.0
+      </p>
+      <div style="padding: 25px;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Windows_logo_-_1985-1989.svg/640px-Windows_logo_-_1985-1989.svg.png" width="120px" alt="10" ></div>
+        <div>
+          <section class="field-row" style="justify-content: flex-end; margin-bottom: 10px;">
+              <button>OK</button>
+              <button>CANCEL</button>
+          </section>
+        </div>
+      </CENTER></div>
+</body>
+</html>

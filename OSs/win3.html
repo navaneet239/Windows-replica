@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 3.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Pixelify Sans', sans-serif;
+        }
+
+        body {
+            background-color: #c4c6ca;
+            user-select: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 55%;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+            cursor: move;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="draggable" src="Assets/win3.png">
+
+    <script>
+        var draggable = document.getElementById('draggable');
+
+        var posX = 0,
+            posY = 0,
+            mouseX = 0,
+            mouseY = 0;
+
+        draggable.addEventListener('mousedown', mouseDown, false);
+        window.addEventListener('mouseup', mouseUp, false);
+
+        function mouseDown(e) {
+            e.preventDefault();
+            posX = e.clientX - draggable.offsetLeft;
+            posY = e.clientY - draggable.offsetTop;
+            window.addEventListener('mousemove', moveElement, false);
+        }
+
+        function mouseUp() {
+            window.removeEventListener('mousemove', moveElement, false);
+        }
+
+        function moveElement(e) {
+            mouseX = e.clientX - posX;
+            mouseY = e.clientY - posY;
+            draggable.style.left = mouseX + 'px';
+            draggable.style.top = mouseY + 'px';
+        }
+    </script>
+</body>
+
+</html>

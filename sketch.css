@@ -1,3 +1,9 @@
+:root{
+    --bg: radial-gradient(circle, rgba(0,21,138,1) 0%, rgba(0,0,0,1) 100%);
+    --fg: rgba(30, 30, 30, 0.25);
+    --border: 1px solid rgb(64, 64, 64);
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,48 +11,110 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
-    background-image: url('https://4kwallpapers.com/images/wallpapers/windows-11-dark-mode-blue-stock-official-3840x2160-5630.jpg');
-    backdrop-filter: blur(75px) brightness(40%) saturate(150%);
-    background-size: cover;
-    background-position: center;
     color: white;
     overflow: hidden;
     user-select: none;
+    background: var(--bg);
 }
+
+
+::-webkit-scrollbar {
+	--scroll: rgb(255 255 255 / 80%);
+	--scrollbar-top-btn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.102 16.981c-1.074 0-1.648-1.265-.941-2.073l5.522-6.311a1.75 1.75 0 0 1 2.634 0l5.522 6.311c.707.808.133 2.073-.941 2.073H6.102z' fill='rgb(0 0 0 / 50%)'/%3E%3C/svg%3E");
+	--scrollbar-right-btn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9 17.898c0 1.074 1.265 1.648 2.073.941l6.311-5.522a1.75 1.75 0 0 0 0-2.634l-6.311-5.522C10.265 4.454 9 5.028 9 6.102v11.796z' fill='rgb(0 0 0 / 50%)'/%3E%3C/svg%3E");
+	--scrollbar-bottom-btn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.102 8c-1.074 0-1.648 1.265-.941 2.073l5.522 6.311a1.75 1.75 0 0 0 2.634 0l5.522-6.311c.707-.808.133-2.073-.941-2.073H6.102z' fill='rgb(0 0 0 / 50%)'/%3E%3C/svg%3E");
+	--scrollbar-left-btn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 17.898c0 1.074-1.265 1.648-2.073.941l-6.311-5.522a1.75 1.75 0 0 1 0-2.634l6.311-5.522c.808-.707 2.073-.133 2.073.941v11.796z' fill='rgb(0 0 0 / 50%)'/%3E%3C/svg%3E");
+	width: 14px;
+	height: 14px;
+	border-radius: 7px;
+	transition: all 0.3s;
+  }
+  ::-webkit-scrollbar:vertical:hover {
+	background: var(--scrollbar-bottom-btn) 0% calc(100% - 3px) / contain
+		no-repeat,
+	  var(--scrollbar-top-btn) 0% calc(0% + 3px) / contain no-repeat,
+	  var(--scroll);
+  }
+  ::-webkit-scrollbar:horizontal:hover {
+	background: var(--scrollbar-right-btn) calc(100% - 3px) 0% / contain no-repeat,
+	  var(--scrollbar-left-btn) calc(0% + 3px) 0% / contain no-repeat,
+	  var(--scroll);
+  }
+  ::-webkit-scrollbar-thumb {
+	display: none;
+	background: rgba(0, 0, 0, 0.5);
+	background-clip: padding-box;
+	border: 6px solid transparent;
+	border-radius: 14px;
+	transition: all 0.3s;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+	border: 4px solid transparent;
+  }
+  ::-webkit-scrollbar-button:single-button {
+	height: 14px;
+  }
+  :hover::-webkit-scrollbar-thumb {
+	display: block;
+  }
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar {
+	--scroll: rgb(44 44 44 / 25%);
+	--scrollbar-top-btn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.102 16.981c-1.074 0-1.648-1.265-.941-2.073l5.522-6.311a1.75 1.75 0 0 1 2.634 0l5.522 6.311c.707.808.133 2.073-.941 2.073H6.102z' fill='rgb(255 255 255 / 50%)'/%3E%3C/svg%3E");
+	--scrollbar-right-btn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9 17.898c0 1.074 1.265 1.648 2.073.941l6.311-5.522a1.75 1.75 0 0 0 0-2.634l-6.311-5.522C10.265 4.454 9 5.028 9 6.102v11.796z' fill='rgb(255 255 255 / 50%)'/%3E%3C/svg%3E");
+	--scrollbar-bottom-btn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.102 8c-1.074 0-1.648 1.265-.941 2.073l5.522 6.311a1.75 1.75 0 0 0 2.634 0l5.522-6.311c.707-.808.133-2.073-.941-2.073H6.102z' fill='rgb(255 255 255 / 50%)'/%3E%3C/svg%3E");
+	--scrollbar-left-btn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 17.898c0 1.074-1.265 1.648-2.073.941l-6.311-5.522a1.75 1.75 0 0 1 0-2.634l6.311-5.522c.808-.707 2.073-.133 2.073.941v11.796z' fill='rgb(255 255 255 / 50%)'/%3E%3C/svg%3E");
+  }
+  ::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.5);
+	background-clip: padding-box;
+  }
+
 header{
-    padding: 10px 15px;
+    padding: 12.5px 15px;
     display: flex;
-    gap: 10px;
+    gap: 7.5px;
 }
 header img{
-    width: 30px;
-    padding: 4.75px;
-    background-color: white;
-    border-radius: 5px;
-    transform: translateY(-1px);
+    width: 32.5px;
+    padding: 4px;
 }
-header h2{margin-top: -3px;}
+header h2{margin-top: -3px; font-weight: 650; opacity: 0.5; font-size: 27.5px;}
 main{
     width: 100%;
     display: flex;
+    gap: 5px;
+    padding-right: 15px;
+    padding-bottom: 15px;
 }
 nav{
-    width: calc(100% - 78.5%);
     transition: all 0.2s;
+    width: calc(100% - 82.5%);
+    height: calc(100dvh - 65px);
+}
+.winNav{
+    width: 100%;
+    height: calc(100% - 161px);
+    overflow: hidden;
+    overflow-y: scroll;
 }
 .container{
     display: flex;
-    background-color: #27272765;
-    width: calc(100% - 22.5%);
-    position: absolute;
-    height: calc(100% - 60px);
-    right: 0;
+    background-color: var(--fg);
+    border: var(--border);
     transition: all 0.2s;
-    border-radius:  5px 0 0 0 ;
+    border-radius:  10px ;
     overflow: hidden;
+    transform: translateY(-42.5px);
+    width: calc(100% - 17.5%);
+    height: calc(100dvh - 22.5px);
 }
 #aboutPg{
     padding: 20px 30px;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 h1{
     letter-spacing: 0.35rem;
@@ -71,12 +139,23 @@ h1{
     font-weight: 500;
     opacity: 0.5;
 }
-.container a:hover{text-decoration: underline;}
-.container .footer{
-    position: absolute;
-    bottom: 30px;
-    line-height: 1.5rem;
+ul {
+    list-style: none; /* Remove default bullets */
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  ul li::before {
+    content: "■";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgb(96.18225529789925, 205.34710675477982, 255); /* Change the color */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1rem; /* Also needed for space (tweak if needed) */
+    margin-left: 1rem; /* Also needed for space (tweak if needed) */
+    margin-right: 5px;
 }
+
+.container a:hover{text-decoration: underline;}
+
 hr{
     width: 97.5%;
     opacity: 0.17;
@@ -87,40 +166,38 @@ hr{
     margin: 7.5px;
     margin-bottom: 10px;
     padding: 10px;
+    padding-top: 7.5px;
     transition: background-color 0.2s;
-    width: 100%;
+    width: 95%;
     display: flex;
     align-items: center;
     gap: 7.5px;
     border-radius: 5px;
+    border: 1px solid transparent;
+    border-left: none;
 }
-.navOpt.menuBtn{
-    width: fit-content;
-    padding: 10px;
-}
-.navOpt.menuBtn span{font-size: 22px; transition: all 0.3s; color: white;}
-.navOpt.menuBtn:active span{transform: scaleX(0.5);}
+
 .navChips{
     background-color: rgb(96.18225529789925, 205.34710675477982, 255);
-    width: 3px;
+    width: 3.5px;
     height: 10px;
     margin-bottom: -2.5px;
-    transform: translateX(-9px);
+    transform: translateX(-10px);
     margin-right: -6px;
     border-radius: 999px;
     transition: all 0.3s;
 }
-.navOpt span{font-size: 18px; margin-bottom: -3.5px; color: rgb(69, 196, 255);}
-.navOpt img{width: 17px;  margin-bottom: -3.5px;}
-.navOpt:hover{    background-color: #27272765;}
-.navOpt:active{    background-color: #27272735;}
+.navChips.orange{background-color: orange;}
+.navOpt img{width: 17px;  margin-bottom: -3.5px; transition: all 0.3s;}
+.navOpt:hover{    background-color: rgba(153, 153, 153, 0.15);}
+.navOpt:active{    background-color: #27272735; border: var(--border); border-left: none;}
+.navOpt:active img{transform: scale(0.9);}
 .navOpt:hover .navChips{height: 13px;}
 .navOpt:active .navChips{height: 15px;}
-.navOpt.active{ background-color: #4d4d4d40;}
+.navOpt.active{ background-color: #4d4d4d40; border: var(--border); border-left: none;}
 .navOpt.active .navChips{height: 16.5px;}
-.navOpt.bottom{position: absolute; bottom: 0; width: calc(100% - 78.5%);}
 
-#dialogPg, #win11Pg, #win10Pg, #win7Pg, #winxpPg, #win95Pg{display: none; width: 100%;}
+#iframeP{display: none; width: 100%;}
 
 iframe{
     width: 100%;

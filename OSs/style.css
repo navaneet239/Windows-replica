@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100vh;
+  font-size: 16px;
+  overflow: hidden;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+	--scroll: rgb(255 255 255 / 80%);
+	--scrollbar-top-btn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.102 16.981c-1.074 0-1.648-1.265-.941-2.073l5.522-6.311a1.75 1.75 0 0 1 2.634 0l5.522 6.311c.707.808.133 2.073-.941 2.073H6.102z' fill='rgb(0 0 0 / 50%)'/%3E%3C/svg%3E");
+	--scrollbar-right-btn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9 17.898c0 1.074 1.265 1.648 2.073.941l6.311-5.522a1.75 1.75 0 0 0 0-2.634l-6.311-5.522C10.265 4.454 9 5.028 9 6.102v11.796z' fill='rgb(0 0 0 / 50%)'/%3E%3C/svg%3E");
+	--scrollbar-bottom-btn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.102 8c-1.074 0-1.648 1.265-.941 2.073l5.522 6.311a1.75 1.75 0 0 0 2.634 0l5.522-6.311c.707-.808.133-2.073-.941-2.073H6.102z' fill='rgb(0 0 0 / 50%)'/%3E%3C/svg%3E");
+	--scrollbar-left-btn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 17.898c0 1.074-1.265 1.648-2.073.941l-6.311-5.522a1.75 1.75 0 0 1 0-2.634l6.311-5.522c.808-.707 2.073-.133 2.073.941v11.796z' fill='rgb(0 0 0 / 50%)'/%3E%3C/svg%3E");
+	width: 14px;
+	height: 14px;
+	border-radius: 7px;
+	transition: all 0.3s;
+  }
+  ::-webkit-scrollbar:vertical:hover {
+	background: var(--scrollbar-bottom-btn) 0% calc(100% - 3px) / contain
+		no-repeat,
+	  var(--scrollbar-top-btn) 0% calc(0% + 3px) / contain no-repeat,
+	  var(--scroll);
+  }
+  ::-webkit-scrollbar:horizontal:hover {
+	background: var(--scrollbar-right-btn) calc(100% - 3px) 0% / contain no-repeat,
+	  var(--scrollbar-left-btn) calc(0% + 3px) 0% / contain no-repeat,
+	  var(--scroll);
+  }
+  ::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.5);
+	background-clip: padding-box;
+	border: 6px solid transparent;
+	border-radius: 14px;
+	transition: all 0.3s;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+	border: 4px solid transparent;
+  }
+  ::-webkit-scrollbar-button:single-button {
+	height: 14px;
+  }
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar {
+	--scroll: rgb(44 44 44 / 25%);
+	--scrollbar-top-btn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.102 16.981c-1.074 0-1.648-1.265-.941-2.073l5.522-6.311a1.75 1.75 0 0 1 2.634 0l5.522 6.311c.707.808.133 2.073-.941 2.073H6.102z' fill='rgb(255 255 255 / 50%)'/%3E%3C/svg%3E");
+	--scrollbar-right-btn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9 17.898c0 1.074 1.265 1.648 2.073.941l6.311-5.522a1.75 1.75 0 0 0 0-2.634l-6.311-5.522C10.265 4.454 9 5.028 9 6.102v11.796z' fill='rgb(255 255 255 / 50%)'/%3E%3C/svg%3E");
+	--scrollbar-bottom-btn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.102 8c-1.074 0-1.648 1.265-.941 2.073l5.522 6.311a1.75 1.75 0 0 0 2.634 0l5.522-6.311c.707-.808.133-2.073-.941-2.073H6.102z' fill='rgb(255 255 255 / 50%)'/%3E%3C/svg%3E");
+	--scrollbar-left-btn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 17.898c0 1.074-1.265 1.648-2.073.941l-6.311-5.522a1.75 1.75 0 0 1 0-2.634l6.311-5.522c.808-.707 2.073-.133 2.073.941v11.796z' fill='rgb(255 255 255 / 50%)'/%3E%3C/svg%3E");
+  }
+  ::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.5);
+	background-clip: padding-box;
+  }
+
+.bgWin11 {
+  background-image: url("Assets/win11_wall.png");
+  background-size: cover;
+  max-height: 100vh;
+  background-position: 0%;
+}
+
+.startmenuWin11 {
+  justify-self: flex-end;
+  position: absolute;
+  bottom: -665px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.startmenuWin11 img {
+  border-radius: 8px;
+  border: 0.25px solid rgb(68, 68, 68);
+  box-shadow: 0px 0px 7.5px rgb(0, 0, 0);
+  width: 485px;
+  height: 525px;
+  -webkit-filter: contrast(115%);
+  filter: contrast(115%);
+}
+#myStartMenuWin10x{opacity: 1;}
+#myStartMenuWin10x img {
+  border-radius: 5px 5px 0 0;
+  border: none;
+  box-shadow: 0px 0px 0px rgb(0, 0, 0);
+  width: 460px;
+  transform: translateY(7.5px);
+}
+
+.taskbarWin11 {
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
+
+.taskbarWin11 img {
+  border-top: 0.5px solid rgba(225, 225, 225, 0.5);
+  width: 100vw;
+  -webkit-filter: contrast(105%);
+  filter: contrast(105%);
+  margin-bottom: -5px;
+}
+
+.bgWin10 {
+  background-image: url("Assets/win10_wall.jpg");
+  background-size: cover;
+  max-height: 100vh;
+  background-position: 0%;
+}
+
+.startmenuWin10 {
+  justify-self: flex-end;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.1s ease-out;
+}
+
+.startmenuWin10 img {
+  border: 0.25px solid rgba(225, 225, 225, 0.35);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.384);
+  width: 615px;
+  height: 525px;
+}
+
+.taskbarWin10 {
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
+
+.taskbarWin10 img {
+  border-top: 0.5px solid rgba(225, 225, 225, 0.5);
+  width: 100vw;
+  height: 33px;
+  margin-bottom: -5px;
+}
+
+.bgWin7 {
+  background-image: url("Assets/win7_wall.jpg");
+  background-size: cover;
+  max-height: 100vh;
+  background-position: 0%;
+}
+
+.startmenuWin7 {
+  justify-self: flex-end;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  bottom: 60px;
+  visibility: hidden;
+  transition: all 0.06s ease-out;
+  transform: translateY(25px);
+}
+
+.startmenuWin7 img {
+  width: 450px;
+  height: 540px;
+}
+#myStartMenuWin8{
+  bottom: 0;
+  z-index: 4;
+  transition: all 0.3s ;
+  transform: translateY(0px) translateX(1rem);
+}
+#myStartMenuWin8 img{
+  width: 100%;
+  height: 100%;
+}
+
+.taskbarWin7 {
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
+
+.taskbarWin7 img {
+  width: 100vw;
+  margin-bottom: -5px;
+}
+
+.bgWinXp {
+  background-image: url("Assets/winXp_wall.jpg");
+  background-size: cover;
+  background-position: 0%;
+}
+
+.startmenuWinXp {
+  justify-self: flex-end;
+  position: absolute;
+  left: 0;
+  bottom: 35px;
+  visibility: hidden;
+}
+
+.startmenuWinXp img {
+  width: 450px;
+  height: 540px;
+  border-radius: 10px 10px 0 0;
+}
+
+.taskbarWinXp {
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
+
+.taskbarWinXp img {
+  border-top: 0.5px solid rgba(225, 225, 225, 0.5);
+  width: 100vw;
+  margin-bottom: -5px;
+}
+
+.bgWin95 {
+  background-color: #008081;
+  background-size: cover;
+  background-position: 0%;
+}
+
+.startmenuWin95 {
+  justify-self: flex-end;
+  position: absolute;
+  left: 0;
+  bottom: 35px;
+  visibility: hidden;
+  z-index: 2;
+}
+
+.startmenuWin95 img {
+  width: 300px;
+  height: 440px;
+}
+
+.taskbarWin95 {
+  position: fixed;
+  bottom: 0;
+}
+
+.taskbarWin95 img {
+  border-top: 0.5px solid rgba(225, 225, 225, 0.5);
+  width: 100%;
+  height: 45px;
+  margin-bottom: -5px;
+}

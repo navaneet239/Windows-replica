@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+        <link rel="stylesheet" href="style.css">
+        <title>Windows 95</title>
+    </head>
+    <body class="bgWin95">
+
+        <div class="startmenuWin95" id="myStartMenuWin95">
+            <img src="Assets/win95_start.png" alt="startmenu Windows 95">
+        </div>
+
+        <div class="taskbarWin95" id="myTaskbarWin95">
+            <img src="Assets/win95_tb.png" alt="taskbar Windows 95">
+        </div>
+
+        <script>
+            let Win95Tb = document.getElementById("myTaskbarWin95");
+            let Win95Start = document.getElementById("myStartMenuWin95");
+
+            Win95Tb.addEventListener("click", ()=>{
+                if(Win95Start.style.visibility == "visible"){
+                    Win95Start.style.visibility = "hidden";
+                }
+                else {
+                    Win95Start.style.visibility = "visible";
+                }
+            })
+        </script>
+    </body>
+</html>

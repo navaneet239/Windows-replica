@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+        <link rel="stylesheet" href="style.css">
+        <title>Windows 98</title>
+    </head>
+    <body class="bgWin95" style="background-color: #4685bb;">
+
+        <div class="startmenuWin95" id="myStartMenuWin95">
+            <img src="https://i.redd.it/project-2k-has-finally-been-released-ever-missed-windows-v0-1s1r8ffea8k91.png?width=202&format=png&auto=webp&s=f1103a0da5125f12623083cf07e8f1adeb9347f0" alt="startmenu Windows 95">
+        </div>
+
+        <div class="taskbarWin95" id="myTaskbarWin95">
+            <img src="Assets/win98_tb.png" alt="taskbar Windows 95">
+        </div>
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/microsoft-windows-2000-logo-png-transparent.png" alt=""
+        style="width: 10rem; position: absolute; right: 10px; top: 10px;">
+        <script>
+            let Win95Tb = document.getElementById("myTaskbarWin95");
+            let Win95Start = document.getElementById("myStartMenuWin95");
+
+            Win95Tb.addEventListener("click", ()=>{
+                if(Win95Start.style.visibility == "visible"){
+                    Win95Start.style.visibility = "hidden";
+                }
+                else {
+                    Win95Start.style.visibility = "visible";
+                }
+            })
+        </script>
+    </body>
+</html>

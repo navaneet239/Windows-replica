@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <link rel="stylesheet" href="style.css">
+        <title>Windows 10x</title>
+    </head>
+    <body class="bgWin11"  style="background: url('https://www.wallpaperhub.app/_next/image?url=https%3A%2F%2Fcdn.wallpaperhub.app%2Fcloudcache%2F5%2Fc%2F8%2Fb%2Fb%2F2%2F5c8bb2128652139c7ccf4b972b6207b9abdf414d.jpg&w=384&q=75'); background-size: cover;">
+
+        <div class="startmenuWin11" id="myStartMenuWin10x">
+            <img src="Assets/win10x.jpg" alt="startmenu Windows 11">
+        </div>
+
+        <div class="taskbarWin11" id="myTaskbarWin11" style="border-top: 1px solid #ccc;">
+            <img src="Assets/win10x_tb.png" alt="taskbar Windows 11">
+        </div>
+
+        <script>
+            let Win11Tb = document.getElementById("myTaskbarWin11");
+            let Win11Start = document.getElementById("myStartMenuWin10x");
+
+            Win11Tb.addEventListener("click", ()=>{
+                if(Win11Start.style.bottom == "50px"){
+                    Win11Start.style.bottom = "-665px";
+                    Win11Start.style.visibility = "hidden";
+                }
+                else {
+                    Win11Start.style.bottom = "50px";
+                    Win11Start.style.visibility = "visible";
+                }
+            })
+        </script>
+    </body>
+</html>

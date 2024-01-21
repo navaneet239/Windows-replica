@@ -17,31 +17,43 @@
         .window {
             overflow: hidden;
             background-color: rgb(240, 240, 240);
-            border: 1px solid rgb(110, 110, 110);
+            border: 7.5px solid #72b0f6;
         }
 
         .title-bar {
             padding: 5px;
-            border-bottom: 1px solid rgb(209, 209, 209);
+            background: #72b0f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .title-bar-text {
-            float: left;
             font-size: 15px;
-            padding-left: 5px;
+            text-align: center;
+            margin-top: -10px;
         }
 
         .title-bar-controls {
-            float: right;
-            margin-top: -5px;
+            position: absolute;
+            right: 0;
+            padding-right: 10px;
+            top: 0;
+            display: flex;
+            align-items: start;
         }
 
         .TbBtn {
-            padding: 6.5px;
             border: none;
-            border-radius: 0;
-            background-color: rgb(240, 240, 240);
-            width: fit-content;
+            padding: 0;
+            margin: 0;
+            margin-top: 1.5px;
+            width: 40px;
+            height: 22.5px;
+            display: flex;
+            align-items:end;
+            background: transparent;
+            justify-content: center;
         }
 
         .field-row {
@@ -52,31 +64,31 @@
 
         button {
             padding: 8px;
+            border: 1px solid #aaa;
+            background: linear-gradient(180deg, white, rgb(237, 237, 237));
             border-radius: 0;
-            background-color: rgb(228, 228, 228);
-            border: 0.35px solid grey;
-            width: 90px;
         }
+        .field-row button {width: 75px;}
     </style>
 </head>
 <body>
     <div class="window" style="width: 100%; height: 100%;">
         <div class="title-bar">
           <div class="title-bar-text">
-            Windows 10
+            Windows 8
           </div>
   
           <div class="title-bar-controls">
             <button class="TbBtn">—</button>
             <button class="TbBtn">▢</button>
-            <button class="TbBtn">&#x2715;</button>
+            <button class="TbBtn" style="background-color: #c15353; color: white; align-items:center;">&#x2715;</button>
           </div><br>
         </div>
         <div class="window-body" style="padding: 5px;" id="Win10"><CENTER>
           <p style="font-size: 16px;">
-            This is a replica of the Windows 10
+            This is a replica of the Windows 8
         </p>
-        <div style="padding: 25px;"><img src="../Assets/win10.png" width="137px" alt="10" ></div>
+        <div style="padding: 25px;"><img style="filter: brightness(1.5);" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Windows_logo_-_2012_%28dark_blue%29.svg/800px-Windows_logo_-_2012_%28dark_blue%29.svg.png" width="120px" alt="10" ></div>
           <div>
             <section class="field-row" style="justify-content: flex-end; margin-bottom: 10px;">
                 <button>ok</button>
